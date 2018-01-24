@@ -20,6 +20,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> 
         public TextView slotName;
        public TextView slotStatus;
         public ImageView slotPhoto;
+        RelativeLayout rl;
 
         PersonViewHolder(View itemView) {
             super(itemView);
@@ -27,6 +28,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> 
             slotName = (TextView)itemView.findViewById(R.id.slot_name);
             slotStatus = (TextView)itemView.findViewById(R.id.slot_status);
             slotPhoto = (ImageView)itemView.findViewById(R.id.slot_photo);
+            rl=blabla
         }
     }
 
@@ -61,6 +63,8 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> 
         personViewHolder.slotName.setText(slots.get(i).name);
         personViewHolder.slotStatus.setText(slots.get(i).status);
         personViewHolder.slotPhoto.setImageResource(slots.get(i).photoId);
+       
+        personViewHolder.rl.setOnClicllistener... Plus plus
 
 //        personViewHolder.slotPhoto.setOnClickListener(new View.OnClickListener() {
 //            @Override
